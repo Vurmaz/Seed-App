@@ -63,7 +63,7 @@ export default function Form () {
             required
             placeholder="Country">
         </input>
-        <button type="submit" className="h-12 w-full md:w-4/6 bg-apri mx-auto btn-1 text-white">Join</button>
+        <button type="submit" className="h-12 w-full md:w-4/6 bg-apri mx-auto btn-1 text-white input-shadow">Join</button>
         <p className="text-center color-apri">{isTrue ? 'Successfully Joined' : ''}</p>
     </form>
   )
