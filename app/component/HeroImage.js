@@ -13,11 +13,11 @@ export default function HeroImage() {
         viewport={{ once: true }}
         transition={{
             ease:'easeInOut',
-            duration:2
+            duration:1
         }}         
     >
         <Image 
-        className="image-must"
+        className="image-must mt-8 md:mt-0"
             src='/product.png'
             fill
             alt="apricot seed"
