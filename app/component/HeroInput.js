@@ -1,9 +1,20 @@
 'use client'
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 export default function HeroInput() {
   return (
-        <form onSubmit={e=>e.preventDefault()} className="w-4/6 flex flex-col gap-4 justify-center items-center">
+        <motion.form 
+            onSubmit={e=>e.preventDefault()} 
+            className="w-4/6 flex flex-col gap-4 justify-center items-center"
+            initial={{ opacity:0 }}
+            whileInView={{ opacity:1 }}
+            viewport={{ once: true }}
+            transition={{
+                ease:'easeInOut',
+                duration:1.5
+            }}                
+        >
             <input 
                 type="email" 
                 name="email" 
@@ -17,6 +28,6 @@ export default function HeroInput() {
                 <button className="btn-1 bg-trans bg-second text-xs w-full input-shadow">More Info</button>
                 </Link>
             </div>
-        </form>
+        </motion.form>
   )
 }

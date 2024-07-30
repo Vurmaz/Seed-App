@@ -5,7 +5,7 @@ const lora = Lora({ subsets: ["latin"], weight:'400' });
 
 export const metadata = {
   title: "Apri-Seed",
-  description: "Apricot Seed Selling App",
+  description: "Apricot Seeds Selling Website",
 };
 
 export default function RootLayout({ children }) {
