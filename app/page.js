@@ -1,9 +1,7 @@
-import Image from "next/image";
+
 import Header from './component/Header'
-import Card from "./component/Card";
 import Form from "./component/Form";
 import Footer from "./component/Footer";
-import HeroInput from "./component/HeroInput";
 import CardSection from "./component/CardSection";
 import HeroSection from "./component/HeroSection";
 import HeroImage from "./component/HeroImage";
@@ -24,8 +22,7 @@ export default function Home() {
       <section id='3' className="h-auto section-3 flex flex-row items-center justify-center text-2xl sm:text-3xl md:text-4xl text-white  italic">
         <h1>Nutritious and Healthy</h1>
       </section>
-      <section id='4' className="section-4 h-screen">
-      
+      <section id='4' className="section-4 h-screen">      
        <Form  />
       </section>
       <Footer />

@@ -27,19 +27,19 @@ export default function Form () {
   return (
     <>
         <motion.h1 
-            className="pt-32 text-2xl sm:text-3xl md:text-4xl text-center font-bold italic"
-            initial={{ y:-200 }}
+            className="pt-32 text-2xl sm:text-3xl md:text-4xl text-center italic uppercase"
+            initial={{ y:-100 }}
             whileInView={{ y:0 }}
             viewport={{ once: true }}
             transition={{
                 ease:'linear',
                 duration:0.5
             }}
-        >JOIN WAITLIST</motion.h1>
+        >Join our waitlist</motion.h1>
         <motion.form 
             onSubmit={submitForm} 
             className="flex flex-col gap-12 mx-auto w-full px-4 md:w-1/2 pt-16"
-            initial={{ y:200 }}
+            initial={{ y:100 }}
             whileInView={{ y:0 }}
             viewport={{ once: true }}
             transition={{

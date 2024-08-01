@@ -4,7 +4,7 @@ import "./globals.css";
 const lora = Lora({ subsets: ["latin"], weight:'400' });
 
 export const metadata = {
-  title: "Apri-Seed",
+  title: "Apricoot",
   description: "Apricot Seeds Selling Website",
 };
 

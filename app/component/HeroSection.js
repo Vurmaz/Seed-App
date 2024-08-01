@@ -7,10 +7,10 @@ export default function HeroSection() {
   return (
     <>
         <motion.div 
-            className="flex flex-col justify-center items-center gap-8 mt-8 md:mt-0"        
+            className="flex flex-col justify-center items-center gap-8 mt-8 md:mt-0 "        
         >
             <motion.h2 
-                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mt-20 md:mt-0 italic font-bold text-justify"
+                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl mt-20 md:mt-0 font-bold text-justify text-green"
                 initial={{ opacity:0 }}
                 whileInView={{ opacity:1 }}
                 viewport={{ once: true }}

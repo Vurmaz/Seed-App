@@ -17,9 +17,10 @@ export default function HeroImage() {
         }}         
     >
         <Image 
-        className="image-must mt-8 md:mt-0"
+            className="object-contain image-must mt-8 md:mt-0"
             src='/product.png'
             fill
+            priority={true}            
             alt="apricot seed"
         ></Image>          
     </motion.div>        

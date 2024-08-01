@@ -20,15 +20,16 @@ export default function CardSection() {
     <>
         <motion.h2 
             ref={ref}
-            className="mt-24 text-2xl sm:text-3xl md:text-4xl text-center font-bold italic"
+            className="mt-24 pb-16 text-2xl sm:text-3xl md:text-4xl text-center uppercase italic"
             initial={{ opacity:0 }}
             whileInView={{ opacity:1 }}
             viewport={{ once: true }}
             transition={{
-                ease:'easeInOut',
+                ease:'linear',
                 duration:0.5
             }}
-        >   The Seeds</motion.h2>
+        >characteristics of our seeds </motion.h2>
+        <hr className='w-full h-2 text-black' />
         <motion.div className="grid grid-col-1 md:grid-cols-3 mt-24 gap-8">
           <div className='me'>
             <Card Icon={GiFruitTree} title={'Fast Grow'} text={'Apricot trees are relatively fast-growing, reaching maturity in 3 to 4 years. With proper care and optimal conditions, they can grow about 24 inches per year, rewarding you with delicious fruit and beautiful blossoms quickly'} />
