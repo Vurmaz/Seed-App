@@ -5,11 +5,14 @@ import Footer from "./component/Footer";
 import CardSection from "./component/CardSection";
 import HeroSection from "./component/HeroSection";
 import HeroImage from "./component/HeroImage";
+import dynamic from 'next/dynamic';
+const NoSSR = dynamic(() => import('./component/Header'), { ssr: false })
+
 
 export default function Home() {
   return (
-    <main className="">
-    <Header></Header>
+    <main className="" >
+    <NoSSR></NoSSR>
       <section id='1' className="h-screen w-full section-1 md:grid md:grid-cols-2">
         <HeroSection />
         <div className="flex items-center justify-center mt-4 sm:mt-0 sm:justify-left ">

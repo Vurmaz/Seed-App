@@ -9,10 +9,12 @@ import Menu from './Menu'
 export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false)
-  const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   useEffect(() => {
-    
+    if (typeof window === 'undefined') return;
     const handleResize = () => {
       setWidth(window.innerWidth);
     };
@@ -36,7 +38,7 @@ export default function Header() {
     {
       isOpen && <Menu isOpen={isOpen}/>
     }
-      <div className='bg-apricot h-20 fixed top-0 left-0 w-full text-black grid grid-cols-2 z-10 header text-white'>
+      <div className='bg-apricot h-20 fixed top-0 left-0 w-full text-black grid grid-cols-2 z-10 header text-white' suppressHydrationWarning>
         <div className='flex items-center ml-8 relative'>
           <Image src='/file.png' height={80} width={80} className='hidden sm:block' alt='apricot'></Image>
             <Link href='#1' className='cursor-pointer'>
